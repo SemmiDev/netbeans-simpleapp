@@ -14,6 +14,7 @@ public class KoneksiDatabase {
     public static Connection getConnection() {
         if (koneksi == null) {
             try {
+                // url mysql = "jdbc:mysql://host/port/NamaDatabase"
                 String url      = "jdbc:postgresql://localhost:5432/simpleappDB";
                 String user     = "postgres";
                 String password = "sammidev";
